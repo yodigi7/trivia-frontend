@@ -9,8 +9,8 @@
 
 <AppShell>
 	<svelte:fragment slot="header">
-		<AppBar class="flex justify-between w-full">
-			Trivia Search
+		<AppBar class="px-32">
+			<svelte:fragment slot="lead">Trivia Search</svelte:fragment>
 			<svelte:fragment slot="trail">(actions)</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
