@@ -1,63 +1,38 @@
-# Trivia Search Website
+# create-svelte
 
-![GitHub repo size](https://img.shields.io/github/repo-size/yodigi7/trivia-frontend)
-![GitHub contributors](https://img.shields.io/github/contributors/yodigi7/trivia-frontend)
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-## Overview
+## Creating a project
 
-This repository contains the frontend code for a basic trivia website that allows users to search for trivia questions using natural language queries. The website uses a free Hugging Face Sentence Transformer model to encode both the question/answer pairs and the user's query to find the best match.
+If you're seeing this, you've probably already done this step. Congrats!
 
-## Features
+```bash
+# create a new project in the current directory
+npm create svelte@latest
 
-- Search trivia questions using natural language queries.
-- Utilizes a Hugging Face Sentence Transformer model to improve search accuracy.
-- User-friendly Svelte-based frontend.
+# create a new project in my-app
+npm create svelte@latest my-app
+```
 
-## Getting Started
+## Developing
 
-These instructions will help you set up a local development environment for the frontend of the trivia website.
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-1. **Prerequisites**
+```bash
+npm run dev
 
-   - Node.js and npm installed on your machine.
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
 
-2. **Clone the Repository**
+## Building
 
-   ```bash
-   git clone https://github.com/yodigi7/trivia-frontend.git
-   ```
+To create a production version of your app:
 
-3. **Install Dependencies**
+```bash
+npm run build
+```
 
-   ```bash
-   cd trivia-frontend
-   npm install
-   ```
+You can preview the production build with `npm run preview`.
 
-4. **Start the Development Server**
-
-   ```bash
-   npm run dev
-   ```
-
-5. **Open the Website**
-   Your website should be running at [http://localhost:5173](http://localhost:5173).
-
-## How to Use
-
-1. Enter your trivia question or query in the search bar.
-2. The website will use the Hugging Face Sentence Transformer model to find the best-matching trivia questions.
-3. Browse the results and enjoy!
-
-## Contributing
-
-If you would like to contribute to this project, feel free to create a pull request. We welcome contributions to improve the website's functionality and user experience.
-
-## Acknowledgments
-
-- [Hugging Face Sentence Transformer](https://huggingface.co/models): We used a pre-trained Sentence Transformer model for natural language queries.
-- [Svelte](https://svelte.dev/): The frontend of this project is built with the Svelte framework.
-
-## Contact
-
-For any questions or feedback, please contact [Anthony Buchholz](https://github.com/yodigi7).
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
