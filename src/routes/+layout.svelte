@@ -11,7 +11,9 @@
 	<svelte:fragment slot="header">
 		<AppBar class="px-32">
 			<svelte:fragment slot="lead">Trivia Search</svelte:fragment>
-			<svelte:fragment slot="trail">(actions)</svelte:fragment>
+			<svelte:fragment slot="trail">
+				<button class="btn variant-filled rounded-full">Buy me a coffee</button>
+			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
 	<slot />

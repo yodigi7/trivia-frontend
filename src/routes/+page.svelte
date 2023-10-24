@@ -1,13 +1,15 @@
-<div class="container h-full mx-auto flex justify-center items-center">
-	<div class="space-y-5">
-		<h1 class="h1">Let's get cracking bones!</h1>
-		<p>Start by exploring:</p>
-		<ul>
-			<li><code class="code">/src/routes/+layout.svelte</code> - barebones layout</li>
-			<li><code class="code">/src/app.postcss</code> - app wide css</li>
-			<li>
-				<code class="code">/src/routes/+page.svelte</code> - this page, you can replace the contents
-			</li>
-		</ul>
-	</div>
+<script lang="ts">
+	let query: string;
+	function search() {
+		console.log(query);
+	}
+</script>
+
+<div class="container h-full mx-auto flex justify-center items-center w-3/4 max-w-xl">
+	<form class="w-full" on:submit|preventDefault={search}>
+		<label for="query">Trivia Question Query</label>
+		<!-- TODO: need to make the text input a more visible text -->
+		<input class="w-full rounded-lg" bind:value={query} type="text" id="query" />
+		<button class="btn variant-filled rounded-full">Search</button>
+	</form>
 </div>
